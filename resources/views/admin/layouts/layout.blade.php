@@ -172,6 +172,7 @@
                             <p>Главная</p>
                         </a>
                     </li>
+
                     <li class="nav-item has-treeview">
                         <a href="#" class="nav-link">
                             <i class="nav-icon fas fa-archive"></i>
@@ -191,6 +192,54 @@
                                 <a href="{{ route('categories.create') }}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>Новая категория</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item has-treeview">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-tags"></i>
+                            <p>
+                                Теги
+                                <i class="right fas fa-angle-left"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="{{ route('tags.index') }}" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Список тегов</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ route('tags.create') }}" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Новый тег</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item has-treeview">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-edit"></i>
+                            <p>
+                                Статьи
+                                <i class="right fas fa-angle-left"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="{{ route('posts.index') }}" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Список статей</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ route('posts.create') }}" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Новая статья</p>
                                 </a>
                             </li>
                         </ul>
